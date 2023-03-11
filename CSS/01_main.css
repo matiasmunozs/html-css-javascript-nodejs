@@ -1,0 +1,18 @@
+
+body {
+    background-color: #efefef;
+}
+
+/* ID es con #*/ 
+#parrafo{
+    color: #ff0000;
+}
+
+/*class es con . 
+Es preferible usar las clases sobre los ID
+*/ 
+
+.etiqueta{
+color: #00aa00
+
+}
