@@ -1,0 +1,22 @@
+body{
+    background-color:antiquewhite;
+}
+.caja{
+border-style: solid;
+background-color: white;
+border-width: 1px;
+border-color: grey;
+padding: 5px;
+}
+.aceptar{
+    background-color: dodgerblue;
+    color: aliceblue;
+    padding: 3px;
+    margin: 3px;
+}
+.cancelar{
+    background-color: grey;
+    color: aliceblue;
+    padding: 3px;
+    margin: 3px;
+}
