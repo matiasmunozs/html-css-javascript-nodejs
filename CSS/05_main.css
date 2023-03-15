@@ -14,4 +14,9 @@ span{
 p{
     max-width: 350px;
     background-color: #f00;
+    margin: auto;
+    position: fixed;
+    right: 15px;
+    top: 0px;
+    bottom: 0px;
 }
