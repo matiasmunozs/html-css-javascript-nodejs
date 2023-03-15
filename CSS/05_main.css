@@ -1,0 +1,17 @@
+body{
+    background-color: white;
+}
+
+
+#invisible{
+    display: none;
+}
+
+span{
+    display: block;
+}
+
+p{
+    max-width: 350px;
+    background-color: #f00;
+}
