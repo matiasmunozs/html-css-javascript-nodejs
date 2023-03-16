@@ -1,0 +1,31 @@
+
+body{
+    background-color: #eee;
+}
+
+
+.fondo{
+    background-image: linear-gradient(-25deg, red, blue, yellow, violet, red);
+}
+
+
+/* 
+    Codigo para explicar background-image
+
+    .fondo{
+    height: 400px;
+    background-color: green;
+    background-image:url(http://placekitten.com/200/300);
+    background-repeat: no-repeat;
+    background-position: left top;background-attachment: scroll;
+    background-size: cover;
+} */
+
+/* 
+    Codigo para explicar los colores.
+    
+    .fondo{
+
+    background-color: hsl(120, 60%, 70%);
+    opacity: 1;
+} */

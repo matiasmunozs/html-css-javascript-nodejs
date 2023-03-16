@@ -1,0 +1,34 @@
+body {
+    background-color: #eee;
+}
+.red {
+    box-shadow: 3px 0px 0px rgba(237, 10, 10, 0.9) inset,
+        1px 1px 2px rgba(0, 0, 0, 0.9);
+    transition: 0.9s;
+}
+.green {
+    box-shadow: 3px 0px 0px rgba(8, 76, 32, 0.9) inset,
+        1px 1px 2px rgba(0, 0, 0, 0.9);
+    transition: 0.5s;
+}
+.blue {
+    box-shadow: 3px 0px 0px rgba(15, 36, 225, 0.9) inset, 1px 1px 2px rgba(0, 0, 0, 0.9);
+    transition: 0.5s;
+}
+p {
+    background-color: white;
+    text-align: center;
+    padding: 15px;
+    width: 200px;
+    margin-left: 20px;
+}
+.red:hover {
+    transform: scale(1.1);
+}
+.green:hover {
+    box-shadow: 3px 0px 0px rgba(8, 76, 32, 0.9) inset,
+        1px 10px 10px rgba(0, 0, 0, 0.5);
+}
+.blue:hover {
+    background-color: rgb(232, 240, 238);
+}
