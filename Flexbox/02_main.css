@@ -1,0 +1,35 @@
+
+
+.flex {
+    display: flex;
+    flex-flow: row wrap;
+    height: 200px;
+}
+
+.red{
+    background-color: red;
+}
+
+/* .primero{
+
+order: 1;
+}
+
+.tercero{
+order: -1;
+
+} */
+
+.primero{
+    flex-grow: 1;
+    flex-basis: 120px;
+}
+
+.tercero{
+    flex:1 120px;
+    align-self: stretch;
+}
+
+.segundo{
+    flex-grow: 1;
+}
