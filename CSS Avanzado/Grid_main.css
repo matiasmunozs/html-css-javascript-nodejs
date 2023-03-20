@@ -1,5 +1,5 @@
 body{
-    background-color: #eee;
+    background-color: white
 }
 
 /* .grid{
@@ -34,11 +34,12 @@ body{
                         "footer footer";
     grid-template-rows: 150px 1fr 200px;
     grid-template-columns: 1fr 200px ;
-            
+    grid-auto-rows: 140px;
+    grid-auto-flow: row;
+    justify-items: stretch;
+    align-items: center;
 }
+
 .red{
     background-color: red;
-}
-.blue{
-    background-color: blue;
 }
