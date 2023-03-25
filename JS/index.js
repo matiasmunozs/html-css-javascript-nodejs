@@ -91,4 +91,55 @@ const resultadoAnd = true && true
 
 const resultadoNot = !true
 
-console.log(resultadoNot)
+// console.log(resultadoNot)
+
+// const edad = 10
+// if (edad >5 && edad <18) {
+// console.log('el niño puede jugar')
+// }  
+
+
+
+// const edad2 = 5
+// if (edad2 >5 && edad <18) {
+// console.log('el niño puede jugar')
+// }else{
+//     console.log('el niño no puede jugar')
+// }
+
+
+let x = 0
+while(x<5){
+    // console.log(x)
+    x++
+}
+// console.log('Terminando el Loop');
+
+let y = 3
+switch ( y) {
+    case 1:{
+        console.log('Yo soy el caso 1');
+        break;
+    }
+    case 2:{
+        console.log('Yo soy el caso 2');
+        break;
+
+    }
+    case 3:
+        console.log('Yo soy el caso 3');
+        break;
+
+    default:
+        console.log('Yo estoy por default');
+        break;
+
+}
+
+
+const numeros = [1,2,'Hola',4,5]
+// console.log(numeros[0]);
+
+for (let i = 0; i < numeros.length; i++) {
+    console.log(numeros[i]);
+}
