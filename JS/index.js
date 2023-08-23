@@ -137,9 +137,17 @@ switch ( y) {
 }
 
 
-const numeros = [1,2,'Hola',4,5]
-// console.log(numeros[0]);
-
-for (let i = 0; i < numeros.length; i++) {
-    console.log(numeros[i]);
+function iterar(arg1){
+    
+    // console.log(numeros[0]);
+    
+    for (let i = 0; i < arg1.length; i++) {
+        console.log(arg1[i]);
+    }
+    
 }
+const numeros = [1,2,'Hola',4,5]
+const nombres = ['Pedro','Juan','Felipe','Chanchito Feliz','Chanchito Triste']
+
+iterar(numeros)
+iterar(nombres)
