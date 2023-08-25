@@ -1,18 +1,37 @@
-const todos = [];
+const todos = JSON.parse(localStorage.getItem('todos')) || [];
 
-window.onload = ()=>{
+const render = () => {
+    const todoList = document.getElementById('todo-list')
+    const todosTemplate = todos.map(t => '<li>' + t + '</li>')
+    todoList.innerHTML = todosTemplate.join('')
+    const elementos = document.querySelectorAll('#todo-list li')
+    elementos.forEach((elemento, i) => {
+        elemento.addEventListener('click', () => {
+            elemento.parentNode.removeChild(elemento)
+            todos.splice(i, 1)
+            actualizaTodos(todos)
+            render()
+        })
+    })
+}
+
+const actualizaTodos = (todos) => {
+    const todoStrings = JSON.stringify(todos)
+    localStorage.setItem('todos', todoStrings)
+
+}
+
+window.onload = () => {
+    render()
     const form = document.getElementById('todo-form');
-    form.onsubmit = (e) =>{
+    form.onsubmit = (e) => {
         e.preventDefault()
         const todo = document.getElementById('todo');
         const todoText = todo.value;
         todo.value = '';
         todos.push(todoText)
-        console.log(todoText);
-        const todoList = document.getElementById('todo-list')
-        const todosTemplate = todos.map(t=>'<li>'+t+'</li>')
-        todoList.innerHTML = todosTemplate.join('')
-        document.querySelectorAll('#todo-list')
+        actualizaTodos(todos)
+        render()
     }
 
 }
